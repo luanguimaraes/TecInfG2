@@ -85,6 +85,7 @@ h2{
   display: inline-block;
   float: left;
   margin: auto;
+  margin-top: 10px;
 }
 
 .noticia .foto{

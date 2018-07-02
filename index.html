@@ -21,17 +21,29 @@
         <img src="http://placehold.it/1980x720" alt="Place Hold">
       </div>
       <div id="noticias">
-        <h2>Noticias</h2>
+        <h2>Noticiass</h2>
         <div class="box">
-          <div class="noticia">
-            <div class="foto">
-              <img src="http://placehold.it/480x320" alt="Placeholder">
-            </div>
-            <div class="conteudo">
-              <h3 class="titulo">Ut enim ad minim veniam</h3>
-              <p class="resumo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
+          <?php
+            include 'connection.php';
+
+            $sql = "SELECT * FROM News";
+            $data = $conn->query($sql);
+
+            if ($data->num_rows > 0) {
+              while($item = $data->fetch_assoc()){
+                echo '<div class="noticia">';
+                echo '  <div class="foto"><img src="http://placehold.it/480x320" alt="Placeholder"></div>';
+                echo '  <div class="conteudo">';
+                echo '    <h3 class="titulo">' . $item['titulo'] . '</h3>';
+                echo '    <p class="resumo">' . $item['noticia'] . '</p>';
+                echo '  </div>';
+                echo '</div>';
+              }
+            }
+            else{
+              echo 'Nenhuma notícia encontrada . <br />';
+            }
+           ?>
         </div>
       </div>
       <div id="bot">
