@@ -1,6 +1,20 @@
 *{
   padding: 0px;
   margin: 0px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+body{
+  margin: 0px;
+  font-size: 14px;
+  color: #333;
+  font-family: "Segoe Ui Light", sans-serif;
+  line-height: 1.2;
 }
 
 img{
@@ -8,7 +22,6 @@ img{
 }
 
 #interface{
-  font-family: sans-serif;
 
   margin: auto;
 }
@@ -30,6 +43,61 @@ img{
 }
 
 #menu{
-  background-color: rgb(245, 185, 244);
-  padding: 20px;
+  display: table;
+  width: 100%;
+}
+
+#menu a{
+  display: inline-block;
+  display: table-cell;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
+}
+
+#menu a:hover{
+  background-color: rgba(100, 130, 250, 0.97);
+  color: #033b2c;
+}
+
+#banner{
+}
+
+#noticias{
+  white-space: nowrap;
+  padding: 15px 0;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+#noticias .box{
+  height: 500px;
+  overflow: auto;
+}
+
+#noticias .noticia{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  margin: auto;
+}
+
+.noticia .foto{
+  display: inline-block;
+  width: 40%;
+  margin-right: 15px;
+  float: left;
+}
+
+.noticia .conteudo{
+  white-space: normal;
+}
+
+.noticia .titulo{
+  display: inline-block;
 }
