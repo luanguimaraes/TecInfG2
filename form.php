@@ -31,12 +31,14 @@ if (isset($_POST['submit'])) {
       $autor = $_POST ["autor"];
       $foto = $_FILES["userfile"];
 
-      if (!empty($foto["userfile"])) {
+      if (!empty($foto["name"])) {
+        echo 'entrou';
         preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"], $ext);
         $nome_imagem = md5(uniqid(time())) . "." . $ext[1];
         $caminho_imagem = "fotos/" . $nome_imagem;
         move_uploaded_file($foto["tmp_name"], $caminho_imagem);
       }else{
+        echo 'não entrou';
         $nome_imagem = '';
       }
 

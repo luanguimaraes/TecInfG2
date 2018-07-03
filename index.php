@@ -18,7 +18,7 @@
         <a href="">Nova Notícia</a>
       </div>
       <div id="banner">
-        <img src="http://placehold.it/1980x720" alt="Place Hold">
+        <img src="img/banner.jpg" alt="Place Hold">
       </div>
       <button onclick="topFunction()" id="botao" title="top">^</button>
       <div id="noticias">
