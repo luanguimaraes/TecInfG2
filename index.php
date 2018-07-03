@@ -9,16 +9,16 @@
   <body>
      <div id="interface">  <!-- bug no xampp? -->
       <div id="top">
-        <img src="http://placehold.it/50x40" alt="Place Hold">
+          <img src="http://placehold.it/50x40" alt="Place Hold">
         <h1>Game News</h1>
       </div>
       <div id="menu">
-        <a href="">Home</a>
-        <a href="">Notícias</a>
-        <a href="">Nova Notícia</a>
+        <a href="index.php">Home</a>
+        <a href="index.php#noticias">Notícias</a>
+        <a href="form.php#formulario">Nova Notícia</a>
       </div>
       <div id="banner">
-        <img src="img/banner.jpg" alt="Place Hold">
+        <img src="img/game_news_banner.png" alt="Place Hold">
       </div>
       <button onclick="topFunction()" id="botao" title="top">^</button>
       <div id="noticias">

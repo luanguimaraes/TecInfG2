@@ -14,22 +14,22 @@
         <h1>Game News</h1>
       </div>
       <div id="menu">
-        <a href="">Home</a>
-        <a href="">Notícias</a>
-        <a href="">Nova Notícia</a>
+        <a href="index.php">Home</a>
+        <a href="index.php#noticias">Notícias</a>
+        <a href="form.php#formulario">Nova Notícia</a>
       </div>
       <div id="banner">
         <img src="img/banner.jpg" alt="Place Hold">
       </div>
       <button onclick="topFunction()" id="botao" title="top">^</button>
 
-      <div class="container">
+      <div id="formulario" class="container">
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
           <label for="fname">Título</label>
           <input type="text" id="fname" name="titulo">
 
           <label for="subject">Resumo</label>
-          <textarea id="subject" name="resumo" placeholder="Write something.." style="height:100px"></textarea>
+          <textarea maxlength="300" id="subject" name="resumo" placeholder="300 caracteres" style="height:100px"></textarea>
 
           <label for="subject">Notícia</label>
           <textarea id="subject" name="noticia" style="height:200px"></textarea>
@@ -37,8 +37,8 @@
           <label for="fname">Autor</label>
           <input type="text" id="fname" name="autor">
 
-          <label for="fname">Imagem</label>
-          <input type="file" id="fname" name="userfile">
+          <label for="fname">Imagem</label><br /><br />
+          <input type="file" id="fname" name="userfile"><br />
 
           <input type="submit" name="submit">
         </form>

@@ -24,10 +24,12 @@ img{
 #interface{
 
   margin: auto;
+  background-color: rgb(133, 129, 131);
+  color: white;
 }
 
 #top{
-  background-color: rgba(100, 130, 250, 0.97);
+  background-color: rgba(0, 0, 0, 1);
   padding: 15px;
   text-align: center;
 }
@@ -45,6 +47,7 @@ img{
 #menu{
   display: table;
   width: 100%;
+  background-color: rgb(133, 129, 131);
 }
 
 #menu a{
@@ -55,6 +58,9 @@ img{
   font-weight: 800;
   text-align: center;
   width: 33%;
+  border: 1px 1px 1px 1px;
+  color: white;
+  font-weight: 900;
 }
 
 #menu a:hover{
@@ -152,5 +158,6 @@ h2{
 }
 
 #footer{
-  border-top: 10px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 1);
 }
