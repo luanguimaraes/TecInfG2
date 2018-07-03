@@ -20,6 +20,7 @@
       <div id="banner">
         <img src="http://placehold.it/1980x720" alt="Place Hold">
       </div>
+      <button onclick="topFunction()" id="botao" title="top">^</button>
       <div id="noticias">
         <h2>Noticias</h2>
         <div class="box">
@@ -32,7 +33,11 @@
             if ($data->num_rows > 0) {
               while($item = $data->fetch_assoc()){
                 echo '<div class="noticia">';
-                echo '  <div class="foto"><img src="http://placehold.it/480x320" alt="Placeholder"></div>';
+                if($item['nome_imagem']==''){
+                  echo '  <div class="foto"><img src="http://placehold.it/480x320" alt="Placeholder"></div>';
+                }else{
+                  echo '  <div class="foto"><img src=fotos/'.$item['nome_imagem'].' alt="Placeholder"></div>';
+                }
                 echo '  <div class="conteudo">';
                 echo '    <h3 class="titulo">' . $item['titulo'] . '</h3>';
                 echo '    <p class="resumo">' . $item['noticia'] . '</p>';
@@ -48,11 +53,12 @@
         </div>
       </div>
       <div id="bot">
-
+        <h2>teste</h2>
       </div>
       <div id="footer">
 
       </div>
     </div>
+    <script src="js/botao.js"></script>
   </body>
 </html>

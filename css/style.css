@@ -62,7 +62,29 @@ img{
 }
 
 #banner{
+
 }
+
+#botao {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(100, 130, 250, 0.97);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#botao:hover {
+  background-color: #555;
+}
+
 
 #noticias{
   white-space: nowrap;
@@ -80,8 +102,31 @@ h2{
   overflow: auto;
 }
 
+#noticias .box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#noticias .box::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#noticias .box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(100, 130, 250, 0.97);
+}
+
+
+
 #noticias .noticia{
-  width: 50%;
+  width: 650px;
+  padding: 5px;
   display: inline-block;
   float: left;
   margin: auto;
@@ -95,10 +140,18 @@ h2{
   float: left;
 }
 
+.noticia .foto img{
+
+}
+
 .noticia .conteudo{
   white-space: normal;
 }
 
 .noticia .titulo{
   display: inline-block;
+}
+
+#footer{
+  border-top: 10px;
 }

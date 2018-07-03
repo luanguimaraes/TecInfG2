@@ -7,5 +7,6 @@ CREATE TABLE News (
   noticia text NOT NULL,
   autor varchar(30) NOT NULL,
   data date NOT NULL,
+  nome_imagem VARCHAR(100) NOT NULL,
   PRIMARY KEY (id)
 );
