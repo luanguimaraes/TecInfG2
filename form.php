@@ -31,12 +31,17 @@ if (isset($_POST['submit'])) {
       $autor = $_POST ["autor"];
       $foto = $_FILES["userfile"];
 
+      if (!empty($foto["userfile"])) {
+        preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"], $ext);
+        $nome_imagem = md5(uniqid(time())) . "." . $ext[1];
+        $caminho_imagem = "fotos/" . $nome_imagem;
+        move_uploaded_file($foto["tmp_name"], $caminho_imagem);
+      }else{
+        $nome_imagem = '';
+      }
+
       // Inserir no Banco
-      preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"], $ext);
-      $nome_imagem = md5(uniqid(time())) . "." . $ext[1];
-      $caminho_imagem = "fotos/" . $nome_imagem;
-      move_uploaded_file($foto["tmp_name"], $caminho_imagem);
-      $sql = "INSERT INTO News (titulo, noticia, autor, nome_imagem) VALUES ('$titulo', '$noticia', '$autor', '$nome_imagem')";
+      $sql = "INSERT INTO News (titulo, noticia, autor, nome_imagem, data) VALUES ('$titulo', '$noticia', '$autor', '$nome_imagem', current_timestamp)";
       if($conn->query($sql) === TRUE){
         echo 'registro adicionado com sucesso';
       }else{
