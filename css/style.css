@@ -99,7 +99,7 @@ h2{
 }
 
 #noticias .box{
-  height: 500px;
+  max-height: 400px;
   overflow: auto;
 }
 
@@ -123,10 +123,8 @@ h2{
 	background-color: rgba(100, 130, 250, 0.97);
 }
 
-
-
 #noticias .noticia{
-  width: 650px;
+  width: 49%;
   padding: 5px;
   display: inline-block;
   float: left;

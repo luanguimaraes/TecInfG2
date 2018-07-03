@@ -34,9 +34,9 @@
               while($item = $data->fetch_assoc()){
                 echo '<div class="noticia">';
                 if($item['nome_imagem']==''){
-                  echo '  <div class="foto"><img src="img/no-image.jpg" alt="Placeholder"></div>';
+                  echo '  <div class="foto"><img src="img/no-image.jpg" alt="Image"></div>';
                 }else{
-                  echo '  <div class="foto"><img src=fotos/'.$item['nome_imagem'].' alt="Placeholder"></div>';
+                  echo '  <div class="foto"><img src=fotos/'.$item['nome_imagem'].' alt="Image"></div>';
                 }
                 echo '  <div class="conteudo">';
                 echo '    <h3 class="titulo">' . $item['titulo'] . '</h3>';

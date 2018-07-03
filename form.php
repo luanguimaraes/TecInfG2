@@ -38,9 +38,9 @@
           <input type="text" id="fname" name="autor">
 
           <label for="fname">Imagem</label>
-          <input type="file" id="fname" name="titulo">
+          <input type="file" id="fname" name="userfile">
 
-          <input type="submit" value="Submit">
+          <input type="submit" name="submit">
         </form>
 
         <?php
@@ -48,9 +48,10 @@
           include 'connection.php';
 
           $titulo = $_POST ["titulo"];
+          $resumo = $_POST ["resumo"];
           $noticia = $_POST ["noticia"];
           $autor = $_POST ["autor"];
-          $foto = $_FILES["userfile"];
+          $foto = $_FILES ["userfile"];
 
           if (!empty($foto["name"])) {
             echo 'entrou';
@@ -64,9 +65,9 @@
           }
 
           // Inserir no Banco
-          $sql = "INSERT INTO News (titulo, noticia, autor, nome_imagem, data) VALUES ('$titulo', '$noticia', '$autor', '$nome_imagem', current_timestamp)";
+          $sql = "INSERT INTO News (titulo, resumo, noticia, autor, nome_imagem, data) VALUES ('$titulo', '$resumo', '$noticia', '$autor', '$nome_imagem', current_timestamp)";
           if($conn->query($sql) === TRUE){
-            echo 'registro adicionado com sucesso';
+            echo 'Registro adicionado com sucesso';
           }else{
             echo 'Erro: ' . $sql . '<br />' . $conn->error;
           }
