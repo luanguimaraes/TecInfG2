@@ -13,9 +13,9 @@
         <h1>Game News</h1>
       </div>
       <div id="menu">
-        <a href="">Item 1</a>
-        <a href="">Item 2</a>
-        <a href="">Item 3</a>
+        <a href="">Home</a>
+        <a href="">Notícias</a>
+        <a href="">Nova Notícia</a>
       </div>
       <div id="banner">
         <img src="http://placehold.it/1980x720" alt="Place Hold">
@@ -34,7 +34,7 @@
               while($item = $data->fetch_assoc()){
                 echo '<div class="noticia">';
                 if($item['nome_imagem']==''){
-                  echo '  <div class="foto"><img src="http://placehold.it/480x320" alt="Placeholder"></div>';
+                  echo '  <div class="foto"><img src="img/no-image.jpg" alt="Placeholder"></div>';
                 }else{
                   echo '  <div class="foto"><img src=fotos/'.$item['nome_imagem'].' alt="Placeholder"></div>';
                 }
@@ -52,6 +52,8 @@
            ?>
         </div>
       </div>
+
+
       <div id="bot">
         <h2>teste</h2>
       </div>
