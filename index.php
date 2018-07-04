@@ -18,7 +18,7 @@
         <a href="form.php#formulario">Nova Notícia</a>
       </div>
       <div id="banner">
-        <img src="img/game_news_banner.png" alt="Place Hold">
+        <img src="img/banner_img_1.png" alt="Place Hold">
       </div>
       <button onclick="topFunction()" id="botao" title="top">^</button>
       <div id="noticias">
