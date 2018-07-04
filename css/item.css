@@ -27,7 +27,6 @@ h2{
   margin-bottom: 10px;
   color: #ffcc00;
   text-align: right;
-
 }
 
 .autor{
@@ -37,7 +36,7 @@ h2{
 }
 
 .foto_noticia img{
-  width:auto;
+  width:50%;
 	height:auto;
   border-radius: 8px;
   border:8px inset #5f6632;
@@ -68,4 +67,8 @@ h2{
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: rgba(100, 130, 250, 0.97);
+}
+
+.titulo{
+ color: rgb(255, 255, 255);
 }

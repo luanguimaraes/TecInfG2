@@ -10,7 +10,7 @@
   <body>
      <div id="interface">  <!-- bug no xampp? -->
       <div id="top">
-        <img src="http://placehold.it/50x40" alt="Place Hold">
+        <img id="icon" src="img/icon.png" alt="Icon">
         <h1>Game News</h1>
       </div>
       <div id="menu">
@@ -19,7 +19,7 @@
         <a href="form.php#formulario">Nova Notícia</a>
       </div>
       <div id="banner">
-        <img src="img/banner.jpg" alt="Place Hold">
+        <img src="img/banner_img_3.png" alt="Place Hold">
       </div>
       <button onclick="topFunction()" id="botao" title="top">^</button>
 
