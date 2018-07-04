@@ -93,6 +93,57 @@ img{
 }
 
 
+/*Style News*/
+
+
+h2{
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.news{
+  border-radius: 5px;
+}
+
+.autor{
+  margin-left: 15px;
+}
+.title{
+    font-weight: 600;
+    text-align: center;
+}
+
+.resumo{
+  font-size: 20px;
+  text-align: center;
+}
+
+.news .picture img{
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.data{
+  text-align: right;
+  margin-right: 15px;
+}
+
+h4 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.descricao{
+    margin-left: 15px;
+}
+
+
+/*Fim Style News*/
+
+
 #noticias{
   white-space: nowrap;
   padding: 15px 0;
