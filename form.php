@@ -77,13 +77,8 @@
     }
         ?>
       </div>
-
-
-      <div id="bot">
-        <h2>teste</h2>
-      </div>
       <div id="footer">
-
+        <p>Criado por TEC. SENAI</p>
       </div>
     </div>
     <script src="js/botao.js"></script>

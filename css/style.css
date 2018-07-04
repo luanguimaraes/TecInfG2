@@ -36,8 +36,9 @@ img{
 h3{
   width: 50%;
 }
-#top img{
 
+#icon{
+  width: 3%;
 }
 
 #top h1{
@@ -162,4 +163,5 @@ h2{
 #footer{
   padding: 50px;
   background-color: rgba(0, 0, 0, 1);
+  text-align: center;
 }

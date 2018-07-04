@@ -9,7 +9,7 @@
   <body>
      <div id="interface">  <!-- bug no xampp? -->
       <div id="top">
-          <img src="http://placehold.it/50x40" alt="Place Hold">
+          <img id="icon" src="img/icon.png" alt="Icon">
         <h1>Game News</h1>
       </div>
       <div id="menu">
@@ -52,13 +52,8 @@
            ?>
         </div>
       </div>
-
-
-      <div id="bot">
-        <h2>teste</h2>
-      </div>
       <div id="footer">
-
+        <p>Criado por TEC. SENAI</p>
       </div>
     </div>
     <script src="js/botao.js"></script>
