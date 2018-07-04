@@ -6,6 +6,9 @@
     <title>Game News</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/item.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   </head>
   <body>
      <div id="interface">  <!-- bug no xampp? -->
@@ -35,13 +38,14 @@
             while($item = $data->fetch_assoc()){
               echo '<div class="noticia">';
               if($item['nome_imagem']!=''){
-                echo '  <div class="foto"><img src=fotos/'.$item['nome_imagem'].' alt="Image"></div>';
+                echo '    <h2 class="titulo">' . $item['titulo'] . '</h2>';
+                echo '  <div class="foto_noticia"><img src=fotos/'.$item['nome_imagem'].' alt="Image"></div>';
               }
               echo '  <div class="conteudo">';
-              echo '    <h2 class="titulo">' . $item['titulo'] . '</h2>';
-              echo '    <p class="">' . $item['noticia'] . '</p>';
-              echo '    <p class="">' . $item['autor'] . '</p>';
-              echo '    <p class="">' . $item['data'] . '</p>';
+              // echo '    <h2 class="titulo">' . $item['titulo'] . '</h2>';
+              echo '    <p class="box">' . $item['noticia'] . '</p>';
+              echo '    <p class="autor">' ."Por: " . $item['autor'] . '</p>';
+              echo '    <p class="dia_post">' ."Postado em: " . $item['data'] . '</p>';
               echo '  </div>';
               echo '</div>';
             }
