@@ -40,7 +40,7 @@
                 }
                 echo '  <div class="conteudo">';
                 echo '    <h3 class="titulo">' . $item['titulo'] . '</h3>';
-                echo '    <p class="resumo">' . $item['noticia'] . '</p>';
+                echo '    <p class="resumo">' . $item['resumo'] . '</p>';
                 echo '<a href="item.php?id=' . $item['id'] . '">Saiba Mais...</a>';
                 echo '  </div>';
                 echo '</div>';
